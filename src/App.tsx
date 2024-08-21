@@ -3,13 +3,9 @@ import Home from "./components/Home";
 import Albums from "./components/Albums";
 import About from "./components/About";
 import Album from "./components/Album";
-import { AlbumsProvider } from "./context/AlbumsProvider";
-
-
 
 function App() {
   return (
-    <AlbumsProvider>
         <Router>
           <header className="p-10 bg-gray-400">
             <nav className="navigation">
@@ -27,7 +23,6 @@ function App() {
               <Route path="/albums/:id" element={<Album></Album>} />
             </Routes>
         </Router>
-    </AlbumsProvider>
   );
 }
 
