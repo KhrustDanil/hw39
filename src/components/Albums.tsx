@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useAlbums } from "../context/AlbumsContext";
+import { useAlbums } from "../context/useAlbums";
 
 const Albums = () => {
   const { albums } = useAlbums();
